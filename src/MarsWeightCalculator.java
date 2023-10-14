@@ -17,7 +17,6 @@ public class MarsWeightCalculator {
         marsWeightChar += (char) (marsWeightChar + 12);
         System.out.println("Result: " + (int) marsWeightChar);
 
-
     }
 
 
