@@ -19,24 +19,21 @@ public class Lab7Task1_Staff extends Lab7Task1_Person {
         System.out.println("Please enter the position: ");
         position = sc2.nextLine();
     }
+    public void print1() throws IOException {
+        print();
+        System.out.println("Education: " + education);
+        System.out.println("Position: " + position);
+    }
 
     public static class Result {
         public static void main(String[] args) throws IOException {
             Lab7Task1_Staff employee = new Lab7Task1_Staff();
-            employee.initialize1();
-            employee.print1();
             employee.initialize();
             employee.print();
             Lab7Task1_Person person = new Lab7Task1_Person();
             person.initialize();
             person.print();
         }
-    }
-
-    public void print1() throws IOException {
-        print();
-        System.out.println("Education: " + education);
-        System.out.println("Position: " + position);
     }
 }
 
