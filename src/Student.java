@@ -45,7 +45,7 @@ public class Student {
             fillTheList(students);
             System.out.println("Students with scores 5: ");
             students.stream()
-                    .filter((student -> student.getScore() == 5));
+                    .filter((student -> student.getScore() == 5))
                     .forEach(System.out::println);
         }
     }
